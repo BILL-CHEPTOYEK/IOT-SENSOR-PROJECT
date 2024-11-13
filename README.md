@@ -5,6 +5,7 @@ This project is an Internet of Things (IoT) system for monitoring environmental 
 
 The data is uploaded to **ThingSpeak** using a Python script, allowing you to monitor the system remotely and visualize the data through time-series graphs and real-time gauges.
 
+
 ## Hardware Components
 - **Arduino Board (e.g., Arduino Uno)**
 - **DHT22 Temperature and Humidity Sensor**
@@ -13,12 +14,14 @@ The data is uploaded to **ThingSpeak** using a Python script, allowing you to mo
 - **LED** (for visual temperature alert)
 - **Resistors, Jumper Wires, Breadboard**
 
+
 ## Features
 - Monitor temperature, humidity, and light levels in real-time.
 - Control external devices (e.g., light) based on light levels.
 - Visualize data on ThingSpeak using graphs and gauges.
 - Trigger alerts for abnormal temperature values (e.g., temperature exceeds 30°C).
 - Send sensor data to ThingSpeak using a Python script.
+
 
 ## Hardware Connections
 1. **DHT22 Sensor:**
@@ -39,6 +42,7 @@ The data is uploaded to **ThingSpeak** using a Python script, allowing you to mo
    - Anode → Digital Pin 9 (Arduino)
    - Cathode → GND
 
+
 ## Software Components
 ### Arduino Code
 The Arduino code reads data from the **DHT22** and **LDR**, controls the **Relay** based on light levels, and triggers the **LED** for temperature alerts. The data is printed to the Serial Monitor and is read by a Python script for uploading to ThingSpeak.
@@ -49,6 +53,7 @@ The Arduino code reads data from the **DHT22** and **LDR**, controls the **Relay
 The Python script reads data from the Arduino’s Serial Monitor, parses it, and uploads it to ThingSpeak. It sends the data at regular intervals and handles connectivity to the ThingSpeak API.
 
 [Link to Python Script](Python/connectcloud.py)
+
 
 ## Cloud Integration - ThingSpeak
 - **ThingSpeak** is used to store and visualize the data from the IoT system. Create a **ThingSpeak channel** to collect data from the sensors. The Python script sends data to this channel via its API.
