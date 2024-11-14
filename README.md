@@ -76,3 +76,15 @@ The Python script reads data from the Arduino’s Serial Monitor, parses it, and
 Make sure you have Python installed, and install the required libraries:
 ```bash
 pip install pyserial requests
+```
+### Step 4: Run the python script
+Open your terminal then run the script
+```bash
+python connectcloud.py
+```
+if you have python3 installed
+run
+```bash
+python3 connectcloud.py
+```
+Now you can view your visualizations in your thingspeak acccount
