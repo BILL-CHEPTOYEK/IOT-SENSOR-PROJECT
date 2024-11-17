@@ -1,7 +1,7 @@
 # IoT-Based Sensor Monitoring and Control System
 
 ## Overview
-This project is an Internet of Things (IoT) system for monitoring environmental parameters such as temperature, humidity, and light levels. The system uses an **Arduino** to collect sensor data and send it to the cloud for real-time visualization and analysis. A **DHT22** sensor measures temperature and humidity, while a **LDR (Light Dependent Resistor)** measures light intensity. The system also includes a **Relay** for controlling devices based on light levels and an **LED** for temperature alerts.
+This project is an Internet of Things (IoT) system for monitoring environmental parameters temperature, humidity, and light levels. The system uses an **Arduino** to collect sensor data and send it to the cloud for real-time visualization and analysis. A **DHT22** sensor measures temperature and humidity, while a **LDR (Light Dependent Resistor)** measures light intensity. The system also includes a **Relay** for controlling devices based on light levels and an **LED** for temperature alerts.
 
 The data is uploaded to **ThingSpeak** using a Python script, allowing you to monitor the system remotely and visualize the data through time-series graphs and real-time gauges.
 
